@@ -1,0 +1,168 @@
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ab8ad2;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cta-container {
+    display: flex;             
+    justify-content: center;    
+    align-items: center;        
+    gap: 20px; 
+    flex-wrap: wrap;            
+    margin-top: 20px; 
+}
+
+#cta-button {
+    display: flex;
+    gap: 20px; 
+}
+
+.social-media-buttons {
+    display: flex; 
+    gap: 15px;
+}
+
+
+#cta {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta-text {
+    display: flex;                  /* Usando flexbox para organizar os itens em coluna */
+    flex-direction: column;         /* Organiza o título e os parágrafos na vertical */
+    justify-content: center;        /* Centraliza os itens verticalmente dentro do contêiner */
+    align-items: center;            /* Centraliza os itens horizontalmente */
+    text-align: right;             /* Centraliza o texto dentro dos elementos */
+    max-width: 800px;               /* Limita a largura do contêiner */
+    margin: 40px auto;              /* Espaçamento acima e abaixo, e centraliza na tela */
+}
+
+.title {
+    font-size: 24px;                /* Tamanho do título */
+    font-weight: bold;              /* Deixa o título em negrito */
+    color: #1d1d1d;                    /* Cor do título */
+    margin-bottom: 20px;            /* Espaço abaixo do título */
+}
+
+.information {
+    font-size: 16;                /* Tamanho da fonte do texto */
+    color: #1d1d1d;                    /* Cor do texto */
+    line-height: 1.6;               /* Espaçamento entre as linhas para melhorar a leitura */
+    max-width: 700px;               /* Limita a largura do texto para não ficar muito largo */
+    margin-bottom: 20px;            /* Espaço abaixo de cada parágrafo */
+    text-align: center;             /* Alinha o texto centralizado dentro de cada parágrafo */
+    
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: #1d1d1d;
+}
+
+#cta .title span {
+    color: #2f80b7;
+}
+
+#cta.description {
+    font-size: 1.2rem;
+}
+
+#cta-button {
+    display: flex;
+    gap: 24px;
+    height: 40px;
+    margin-right: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+#cta-button a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#mobile-btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+     background-color: #ab8ad2;
+     padding: 8px 14px;
+     font-weight: 500;
+     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+     border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40% 30% 0% 20%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+    #banner,
+    #banner img {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
